@@ -1,7 +1,19 @@
 # Solution
 
 ```rust,editable
-{{#include exercise.rs:solution}}
+fn countdown(n: u32) {
+    if n == 0 {
+        println!("Liftooooff!")
+    } else {
+        println!("{n}");    // why can't we write println!(n)?;
+        countdown(n - 1);
+    }
+}
+
+fn main() {
+    let n = 20;
+    countdown(n);
+}
 ```
 
 <details>

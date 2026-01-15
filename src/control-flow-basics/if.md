@@ -34,6 +34,9 @@ fn main() {
 
 <details>
 
+* Changer le type dans la branche.
+* If expr must have `;`
+
 Because `if` is an expression and must have a particular type, both of its
 branch blocks must have the same type. Show what happens if you add `;` after
 `"small"` in the second example.

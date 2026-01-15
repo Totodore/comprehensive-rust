@@ -2,36 +2,13 @@
 minutes: 15
 ---
 
-# Exercise: Fibonacci
-
-The Fibonacci sequence begins with `[0, 1]`. For `n > 1`, the next number is the
-sum of the previous two.
-
-Write a function `fib(n)` that calculates the nth Fibonacci number. When will
-this function panic?
+# Exercise: Recursive countdown
+Write a recursive countdown function that will print "Liftoff!" when it reaches 0.
 
 ```rust,editable,should_panic
-{{#include exercise.rs:fib}}
-    if n < 2 {
-        // The base case.
-        return todo!("Implement this");
-    } else {
-        // The recursive case.
-        return todo!("Implement this");
-    }
-}
-
-{{#include exercise.rs:main}}
+{{#include exercise.rs}}
 ```
 
 <details>
-
-- This exercise is a classic introduction to recursion.
-- Encourage students to think about the base cases and the recursive step.
-- The question "When will this function panic?" is a hint to think about integer
-  overflow. The Fibonacci sequence grows quickly!
-- Students might come up with an iterative solution as well, which is a great
-  opportunity to discuss the trade-offs between recursion and iteration (e.g.,
-  performance, stack overflow for deep recursion).
 
 </details>

@@ -16,6 +16,13 @@ fn main() {
 
 <details>
 
+* Short hand syntax [0; 1024].
+* type `[T; N]`, essayer de réassigner une autre array.
+* Alloué sur la stack faire une démo avec un nb tros gros, virer le println, `[0; 100000000]`
+* Montrer le out of bound a la compil.
+
+---
+
 - Arrays can also be initialized using the shorthand syntax, e.g. `[0; 1024]`.
   This can be useful when you want to initialize all elements to the same value,
   or if you have a large array that would be hard to initialize manually.

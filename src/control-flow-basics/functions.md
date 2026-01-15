@@ -18,6 +18,12 @@ fn main() {
 
 <details>
 
+* Dernière expression sans `;` = `return`;
+* Montrer avec `;`
+* Pas d'overloading, ni variadic. faire la démo. c'est pour cas qu'on a des macros notamment pour 
+* println!.
+
+---
 - Declaration parameters are followed by a type (the reverse of some programming
   languages), then a return type.
 - The last expression in a function body (or any block) becomes the return

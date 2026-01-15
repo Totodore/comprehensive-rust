@@ -35,6 +35,15 @@ fn main() {
 
 <details>
 
+* Switch en mieux, pas de fallthrough/break obligatoire.
+* Bcp plus complexes (montrer avec des ranges.)
+* Expression == block.
+* Exhaustife
+* Exemple if, else
+* match guard with `if`
+
+---
+
 - `match` arms are evaluated from top to bottom, and the first one that matches
   has its corresponding body executed.
 

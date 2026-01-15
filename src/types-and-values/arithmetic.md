@@ -16,6 +16,15 @@ fn main() {
 
 <details>
 
+* Parler de la fn qui renvoie un int.
+* Parler des const eval.
+* Overflow panics on debug and wraps in release.
+
+[Changer -> i32 en i16](https://play.rust-lang.org/?version=stable&mode=release&edition=2024&code=fn+interproduct%28a%3A+i16%2C+b%3A+i16%2C+c%3A+i16%29+-%3E+i16+%7B%0A++++return+a+*+b+%2B+b+*+c+%2B+c+*+a%3B%0A%7D%0A%0Afn+main%28%29+%7B%0A++++println%21%28%22result%3A+%7B%7D%22%2C+interproduct%28120%2C+100%2C+248%29%29%3B%0A%7D).
+
+[Const eval](https://play.rust-lang.org/?version=stable&mode=release&edition=2024&code=fn+main%28%29+%7B%0A++++let+a%3A+i16+%3D+120+*+123123213231%3B%0A++++println%21%28%22result%3A+%7Ba%7D%22%29%3B%0A%7D)
+
+--- 
 This is the first time we've seen a function other than `main`, but the meaning
 should be clear: it takes three integers, and returns an integer. Functions will
 be covered in more detail later.

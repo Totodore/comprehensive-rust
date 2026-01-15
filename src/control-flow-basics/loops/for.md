@@ -17,6 +17,9 @@ fn main() {
 
 <details>
 
+* iterators, on verra plus tard.
+* Montrer iterator avec `1..=5`
+
 - Under the hood `for` loops use a concept called "iterators" to handle
   iterating over different kinds of ranges/collections. Iterators will be
   discussed in more detail later.

@@ -15,6 +15,12 @@ This is the first day of Rust Fundamentals. We will cover a lot of ground today:
 - Control flow constructs: loops, conditionals, and so on.
 - User-defined types: structs and enums.
 
+The course is mostly targeted towards C/C++ developers, however I'll try to also make comparisons with
+higher level languages.
+
+* Rust Doc (docs.rs)
+* <https://doc.rust-lang.org/std>
+
 ## Schedule
 
 {{%session outline}}

@@ -21,6 +21,18 @@ Rust is a new programming language that had its [1.0 release in 2015][1]:
 
 <details>
 
+* Très Flexible
+* Beaucoup de control
+* Peut être scaled down pour faire de l'embarquer, très peu de ressource. Pas de heap, etc etc
+* Aucun runtime/GC
+* -> Sécurité, Stabilité (même depuis des langages plus haut niveau).
+
+---
+**Questions**:
+* LLVM -> LLVM IR, backend that generate ASM code from LLVM IR
+
+---
+
 Rust fits in the same area as C++:
 
 - High flexibility.

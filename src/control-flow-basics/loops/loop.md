@@ -18,6 +18,9 @@ fn main() {
 
 <details>
 
+* Montrer que on peut `break` avec une valeure, et que dans ce cas là on passe d'un block a une expression.
+
+---
 - The `loop` statement works like a `while true` loop. Use it for things like
   servers that will serve connections forever.
 

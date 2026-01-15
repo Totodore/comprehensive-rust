@@ -27,6 +27,13 @@ A variable's scope is limited to the enclosing block.
 
 <details>
 
+* Demo `;`, sans `;`.
+* `dbg!` explications
+* `return` c'est sur tt le scope de la fonction.
+* `y` out of scope, deallocation + drop.
+
+---
+
 - You can explain that dbg! is a Rust macro that prints and returns the value of
   a given expression for quick and dirty debugging.
 

@@ -13,7 +13,7 @@ standard library includes an assortment of useful macros.
 - `format!(format, ..)` works just like `println!` but returns the result as a
   string.
 - `dbg!(expression)` logs the value of the expression and returns it.
-- `todo!()` marks a bit of code as not-yet-implemented. If executed, it will
+- `todo!()/unimplemented!()` marks a bit of code as not-yet-implemented. If executed, it will
   panic.
 
 ```rust,editable
@@ -37,6 +37,10 @@ fn main() {
 
 <details>
 
+* call pour montrer que ca fail `fizzbuzz()`.
+* Utiliser `unreachable!` et pas `todo!()`.
+
+---
 The takeaway from this section is that these common conveniences exist, and how
 to use them. Why they are defined as macros, and what they expand to, is not
 especially critical.

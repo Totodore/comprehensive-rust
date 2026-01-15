@@ -29,6 +29,9 @@ fn main() {
 
 <details>
 
+* C'est pas du typage dynamique, CF `auto` en C++ ou `var` en Java/C# par exemple, le type est automatiquement inféré
+a partir du contexte.
+
 This slide demonstrates how the Rust compiler infers types based on constraints
 given by variable declarations and usages.
 
