@@ -23,6 +23,11 @@ generally preferred.
 
 <details>
 
+* Variables "globales", immutable et disponible pour la totalité de la durée de vie du programme.
+* Thread local/Oncelock/LazyLock si on veut faire des trucs sans se faire blocker car le compilateur n'est pas capable
+de prouver qu'il y a qu'un seul thread.
+---
+
 - `static` is similar to mutable global variables in C++.
 - `static` provides object identity: an address in memory and state as required
   by types with interior mutability such as `Mutex<T>`.

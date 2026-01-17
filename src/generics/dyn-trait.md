@@ -54,7 +54,91 @@ fn main() {
 }
 ```
 
+
+# Manual VTABLE example
+```rust,editable
+use std::ptr::NonNull;
+
+struct Dog {
+    name: String,
+    age: i8,
+}
+
+struct Cat {
+    lives: i8,
+}
+
+struct PetVTable {
+    talk: fn(*const ()) -> String,
+}
+fn dog_talk(ptr: *const ()) -> String {
+    let dog = unsafe { &*(ptr as *const Dog) };
+    format!("Woof, my name is {}!", dog.name)
+}
+
+fn cat_talk(_ptr: *const ()) -> String {
+    "Miau!".to_string()
+}
+
+static DOG_VTABLE: PetVTable = PetVTable {
+    talk: dog_talk,
+};
+
+static CAT_VTABLE: PetVTable = PetVTable {
+    talk: cat_talk,
+};
+
+struct DynPet {
+    data: NonNull<()>,
+    vtable: &'static PetVTable,
+}
+impl From<&Dog> for DynPet {
+    fn from(dog: &Dog) -> Self {
+        Self {
+            data: NonNull::from(dog).cast(),
+            vtable: &DOG_VTABLE,
+        }
+    }
+}
+impl From<&Cat> for DynPet {
+    fn from(cat: &Cat) -> Self {
+        Self {
+            data: NonNull::from(cat).cast(),
+            vtable: &CAT_VTABLE,
+        }
+    }
+}
+
+impl DynPet {
+    fn talk(&self) -> String {
+        (self.vtable.talk)(self.data.as_ptr())
+    }
+}
+
+// Uses type-erasure and dynamic dispatch.
+fn dynamic(pet: DynPet) {
+    println!("Hello, who are you? {}", pet.talk());
+}
+
+fn main() {
+    let cat = Cat { lives: 9 };
+    let dog = Dog { name: String::from("Fido"), age: 5 };
+
+    dynamic(DynPet::from(&cat));
+    dynamic(DynPet::from(&dog));
+}
+```
+
 <details>
+
+* Jusqu'à maintenant on a vu que du static dispatch, réalisé avec de la monomorphisation.
+* dynamic dispatch avec une vtable (virtual method table), ce qui est utilisé par défaut en C++, Java.
+Ca a un coût plus élevé: 
+  * le compilateur ne peut pas faire les mêmes optimisations que pour le static dispatch. 
+  * On stocke chaque méthode déréférence la vtable pour trouver l'implémentation approprié.
+* Montrer un exemple d'implémentation manuelle de VTABLE?
+
+---
 
 - Generics, including `impl Trait`, use monomorphization to create a specialized
   instance of the function for each different type that the generic is

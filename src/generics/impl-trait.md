@@ -29,9 +29,11 @@ fn main() {
 ```
 
 <details>
+* Travailler avec des types que l'on peut pas nommer. Le sens de `impl Trait` dépend de la position où il est utilisé.
+* Pour un param c'est pareil.
+* Pour un return type, ca permet d'obfuscer le type de retour, ce qui peut être utile pour masquer des détails de l'implémentation. Dans ces cas là l'inférence auto peut être un peu foireuse.
 
-`impl Trait` allows you to work with types that you cannot name. The meaning of
-`impl Trait` is a bit different in the different positions.
+---
 
 - For a parameter, `impl Trait` is like an anonymous generic parameter with a
   trait bound.

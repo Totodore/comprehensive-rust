@@ -21,6 +21,12 @@ fn main() {
 
 <details>
 
+* Les références ne peuvent pas être null.
+* Les références ne peuvent pas vivre plus longtemps que les données auxquelles elles pointent.
+* Montrer Option?
+
+---
+
 - This slide gets students thinking about references as not simply being
   pointers, since Rust has different rules for references than other languages.
 

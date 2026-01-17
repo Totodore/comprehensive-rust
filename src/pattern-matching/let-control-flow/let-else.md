@@ -34,6 +34,11 @@ fn main() {
 ```
 
 <details>
+
+* Montrer l'exemple
+* Early return avec `?`
+
+--- 
 The rewritten version is:
 
 ```rust

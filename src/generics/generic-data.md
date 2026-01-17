@@ -44,6 +44,13 @@ fn main() {
 
 <details>
 
+* Generic constraint specific to impl block.
+* Possible d'écrire `impl VerbosityFilter<StderrLogger> { .. }`.
+* On met pas de trait bound sur `VerbosityFilter` lui-même car pas besoin, il faut toujours
+mettre le moins de bounds possible.
+
+---
+
 - _Q:_ Why is `L` specified twice in `impl<L: Logger> .. VerbosityFilter<L>`?
   Isn't that redundant?
   - This is because it is a generic implementation section for generic type.

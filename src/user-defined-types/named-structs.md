@@ -39,6 +39,17 @@ fn main() {
 
 <details>
 
+* Trois types de structs:
+  * zero sized,
+  * named struct
+  * tuple struct (next slide)
+* Montrer le debugger.
+* Pas d'héritage entre les structs.
+* Pas de default values ni de null.
+* short-hand with same field names
+* Struct update syntax
+
+---
 Key Points:
 
 - Structs work like in C or C++.

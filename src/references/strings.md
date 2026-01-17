@@ -23,16 +23,28 @@ fn main() {
 
     let mut s2: String = String::from("Hello ");
     println!("s2: {s2}");
-
+    
     s2.push_str(s1);
     println!("s2: {s2}");
 
     let s3: &str = &s2[2..9];
     println!("s3: {s3}");
+    
+    let will_panic = &"13€"[..4];
 }
 ```
 
 <details>
+
+* Toujours indexé avec des octets, panic si on est pas aligné sur des caractères.
+* Utiliser `.chars()` pour itérer sur les caractères.
+* rvalue static promotion for &str slice.
+* String est un wrapper autour d'un vecteur de bytes.
+* montrer `format!()` comme `println!`.
+* Toujours utilise `&str` plutot que `&String`.
+* Montrer le `r#""#` pour les raw strings. 
+
+---
 
 - `&str` introduces a string slice, which is an immutable reference to UTF-8
   encoded string data stored in a block of memory. String literals (`"Hello"`),

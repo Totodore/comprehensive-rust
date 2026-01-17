@@ -23,6 +23,11 @@ fn main() {
 
 <details>
 
+* Niche opti
+* aller voir la doc de option.
+
+---
+
 - `Option` is widely used, not just in the standard library.
 - `unwrap` will return the value in an `Option`, or panic. `expect` is similar
   but takes an error message.

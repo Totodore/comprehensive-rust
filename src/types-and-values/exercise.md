@@ -3,7 +3,7 @@ minutes: 15
 ---
 
 # Exercise: Recursive countdown
-Write a recursive countdown function that will print "Liftoff!" when it reaches 0.
+Write a recursive countdown function that will print a count down from a given number to "Liftoff!" when it reaches 0.
 
 ```rust,editable,should_panic
 {{#include exercise.rs}}

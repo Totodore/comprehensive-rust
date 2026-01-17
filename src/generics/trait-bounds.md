@@ -25,6 +25,11 @@ fn main() {
 
 <details>
 
+* Combiner des trait bounds avec `+`
+* Montrer avec `where`, plus de features.
+* Pas de specialization, impossible de définir `duplicate(a: u32)`, same goes for methods.
+---
+
 - Try making a `NotCloneable` and passing it to `duplicate`.
 
 - When multiple traits are necessary, use `+` to join them.

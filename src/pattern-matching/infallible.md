@@ -31,6 +31,9 @@ fn main() {
 
 <details>
 
+* Montrer avec tuple, array, enum et struct.
+---
+
 - All of the demonstrated patterns are _irrefutable_, meaning that they will
   always match the value on the right hand side.
 

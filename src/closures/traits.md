@@ -47,6 +47,12 @@ fn main() {
 
 <details>
 
+* Si la fonction est appelée qu'une fois, utiliser `FnOnce`.
+* Si la fonction est appelée plusieurs fois, utiliser `FnMut`.
+* Si c'est pas possible utiliser `Fn`.
+
+---
+
 An `Fn` (e.g. `add_suffix`) neither consumes nor mutates captured values. It can
 be called needing only a shared reference to the closure, which means the
 closure can be executed repeatedly and even concurrently.

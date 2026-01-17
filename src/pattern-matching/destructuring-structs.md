@@ -12,6 +12,10 @@ Like tuples, structs can also be destructured by matching:
 
 <details>
 
+* Montrer match &self, match &mut self, `ref` and `mut ref` and `@`.
+* Montrer la subtilité avec CONST/values vs binding. 
+---
+
 - Change the literal values in `foo` to match with the other patterns.
 - Add a new field to `Foo` and make changes to the pattern as needed.
 

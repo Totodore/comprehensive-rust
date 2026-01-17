@@ -30,6 +30,13 @@ fn main() {
 
 <details>
 
+* Comme un `union` en C, les `enum` peuvent être utilisées pour représenter des unions de données.
+* Chaque valeurs que peuvent prendre un enum s'appellent `variant`.
+* Montrer le debugger?
+* Le discriminant est utilisé pour identifier la valeur de l'enum à l'exécution.
+
+---
+
 Key Points:
 
 - Enumerations allow you to collect a set of values under one type.

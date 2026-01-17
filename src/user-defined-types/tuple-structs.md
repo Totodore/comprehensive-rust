@@ -17,25 +17,28 @@ fn main() {
 
 This is often used for single-field wrappers (called newtypes):
 
-```rust,editable,compile_fail
-struct PoundsOfForce(f64);
-struct Newtons(f64);
+```rust,editable
+struct IpAddress(String);
+struct Port(u16);
 
-fn compute_thruster_force() -> PoundsOfForce {
-    todo!("Ask a rocket scientist at NASA")
-}
-
-fn set_thruster_force(force: Newtons) {
-    // ...
+fn connect(ip: IpAddress, port: Port) {
+    // Connect to the IP address and port
 }
 
 fn main() {
-    let force = compute_thruster_force();
-    set_thruster_force(force);
+    let ip = IpAddress("127.0.0.1".to_string());
+    let port = Port(8080);
+    connect(ip, port);
 }
 ```
 
 <details>
+
+* Newtype pattern pour apporter plus de sens à une valeur primitive.
+* Si zero field -> utilise un unit type qui sera un ZST (Zero Sized Type)
+* ZST est un type qui n'a pas de taille et ne contient pas de données.
+
+---
 
 - Newtypes are a great way to encode additional information about the value in a
   primitive type, for example:

@@ -20,6 +20,14 @@ fn main() {
 
 <details>
 
+
+* Parler de la monomorphisation, ca ne touche pas les performances mais ca impacte la taille du code.
+et les temps de compilation.
+* Inférence automatique des types
+* Contraintes sur les types -> trait bound, montrer l'exemple avec Sum par exemple.
+
+---
+
 - It can be helpful to show the monomorphized versions of `pick`, either before
   talking about the generic `pick` in order to show how generics can reduce code
   duplication, or after talking about generics to show how monomorphization

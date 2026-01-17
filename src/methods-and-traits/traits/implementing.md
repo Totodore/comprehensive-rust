@@ -14,6 +14,12 @@ struct Dog {
     age: i8,
 }
 
+impl Dog {
+    fn talk(&self) -> String {
+        format!("Je parle {}!", self.name)
+    }
+}
+
 impl Pet for Dog {
     fn talk(&self) -> String {
         format!("Woof, my name is {}!", self.name)
@@ -28,6 +34,11 @@ fn main() {
 ```
 
 <details>
+
+* Le nommage seul ne suffit pas pour implémenter un trait. D'ailleurs on peut avoir plusieurs
+non pour un même type.
+* Pour être sur on utilise parfois la syntaxe `Pet::talk(&fido)`.
+* On peut faire des impl block dans plusieurs fichiers.
 
 - To implement `Trait` for `Type`, you use an `impl Trait for Type { .. }`
   block.

@@ -38,6 +38,8 @@ pas de `->` comme en C++.
 valeur vers laquelle elle réfère.
 * dandling reference cannot exists, montrer un exemple avec un blocK.
 
+---
+
 - References can never be null in Rust, so null checking is not necessary.
 
 - A reference is said to "borrow" the value it refers to, and this is a good

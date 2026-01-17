@@ -32,6 +32,11 @@ fn main() {
 }
 ```
 
+
+* Ajouter une troisième variant pour montrer que ca marche plus
+* Ajouter une nested struct pour montrer avec tuple, array, enum et struct (montrer sur zed pour le LSP?)
+
+---
 Here we have used the arms to _destructure_ the `Result` value. In the first
 arm, `half` is bound to the value inside the `Ok` variant. In the second arm,
 `msg` is bound to the error message.

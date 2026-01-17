@@ -40,6 +40,14 @@ fn main() {
 
 <details>
 
+* Voir ca de la même manière que la monomorphisation de fonctions, c'est comme si on avait plusieurs
+`From`.
+* Si on généralise, un trait generic peut être considéré comme un input type et un associasted type un output type.
+* Pas de specialization, impossible d'implémenter plusieurs implémentations qui pourraient être ambiguës.
+* Montrer un exemple pour tout `T: std::fmt::Display`.
+
+---
+
 - The `From` trait will be covered later in the course, but its
   [definition in the `std` docs][from] is simple, and copied here for reference.
 

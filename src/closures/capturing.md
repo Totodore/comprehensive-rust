@@ -23,6 +23,13 @@ fn main() {
 
 <details>
 
+* Avant on a vu des fonctions/closure pures qui ne capturaient leur environnement.
+* Capture l'environnement lors de la déclaration et récupére des valeurs lors de l'exécution.
+* Montrer le mot clé move.
+* Montrer l'équivalent manuel d'une closure qui capture l'env by value, by ref et mut ref.
+
+---
+
 - By default, a closure captures values by reference. Here `max_value` is
   captured by `clamp`, but still available to `main` for printing. Try making
   `max_value` mutable, changing it, and printing the clamped values again. Why

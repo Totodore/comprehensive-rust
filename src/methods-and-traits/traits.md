@@ -18,6 +18,12 @@ trait Pet {
 
 <details>
 
+* Comme une interface en java.
+* On peut avoir des méthodes par défaut.
+* On peut avoir des méthodes abstraites.
+
+---
+
 - A trait defines a number of methods that types must have in order to implement
   the trait.
 

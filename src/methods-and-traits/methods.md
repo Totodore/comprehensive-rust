@@ -69,6 +69,11 @@ There are several common receivers for a method:
 
 <details>
 
+* Montrer la syntaxe `self: Self` et que `Self` est un alias pour le type de la structure.
+* Montrer `self` take by value in `finish`.
+
+--- 
+
 Key Points:
 
 - It can be helpful to introduce methods by comparing them to functions.

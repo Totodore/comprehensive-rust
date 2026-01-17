@@ -20,6 +20,10 @@ fn main() {
 
 <details>
 
+* Fonction pure, réécrire avec fn.
+
+---
+
 - The arguments go between the `|..|`. The body can be surrounded by `{ .. }`,
   but if it is a single expression these can be omitted.
 
