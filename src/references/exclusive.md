@@ -20,6 +20,10 @@ fn main() {
 
 <details>
 
+* 1 référence mutable ou N référence immutable.
+* Différence entre `let mut` et `let a: &mut i32`
+--- 
+
 Key points:
 
 - "Exclusive" means that only this reference can be used to access the value. No

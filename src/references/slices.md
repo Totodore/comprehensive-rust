@@ -22,6 +22,14 @@ fn main() {
 
 <details>
 
+* On peut fair des slice d'arrays, ce sont des références.
+* notations `&a[0..a.len()]` and `&a[..a.len()]`, `&a[2..a.len()]` and `&a[2..]` -> `&a[..]`
+* le type de s ne mentionne plus la taille, on peut réassigner ca ou on veut.
+* slices are immutable, we can't grow them. Il faut voir ca comme une view.
+* Montrer le fat pointer qui correspond a la référence sur le débugger.
+
+---
+
 - We create a slice by borrowing `a` and specifying the starting and ending
   indexes in brackets.
 

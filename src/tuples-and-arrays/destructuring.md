@@ -24,6 +24,12 @@ fn main() {
 
 <details>
 
+* On peut faire ca directement dans les arguments et c'est souvent utilisé.
+* supprimer "right" pour montrer que le desctrure est irrefutable
+* On peut faire pareil avec des arrays!
+
+---
+
 - The patterns used here are "irrefutable", meaning that the compiler can
   statically verify that the value on the right of `=` has the same structure as
   the pattern.

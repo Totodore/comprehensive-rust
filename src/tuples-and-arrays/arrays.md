@@ -16,10 +16,11 @@ fn main() {
 
 <details>
 
-* Short hand syntax [0; 1024].
+* Short hand syntax `[0; 1024]`.
 * type `[T; N]`, essayer de réassigner une autre array.
 * Alloué sur la stack faire une démo avec un nb tros gros, virer le println, `[0; 100000000]`
-* Montrer le out of bound a la compil.
+* Montrer le out of bound a la compil puis en dynamic (faire une fn qui sort l'index).
+* Montrer le print/debug printing.
 
 ---
 

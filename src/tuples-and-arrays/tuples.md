@@ -16,6 +16,13 @@ fn main() {
 
 <details>
 
+* taille fixe,
+* différend types groupés (montrer le debugger).
+* Parler du unit type `()`.
+* impossible d'itérer sur des tuples car types différents.
+* immutable comme les array, on peut pas ajouter ou supprimer des éléments.
+
+---
 - Like arrays, tuples have a fixed length.
 
 - Tuples group together values of different types into a compound type.

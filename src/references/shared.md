@@ -27,6 +27,17 @@ value.
 
 <details>
 
+* Jamais null
+* On parle de "Borrow" une valeur. on emprunte une valeur mais elle est toujours possédée 
+par la variable originale.
+* Comme des pointeurs en C/C++
+* Souvent plus petit par rapport a ce a quoi elles pointent (1 machine word).
+* Rust reference et dereference automatiquement lorsque on appelle des méthodes.
+pas de `->` comme en C++.
+* Une référence qui est mutable ne veut pas dire qu'on peut modifier la
+valeur vers laquelle elle réfère.
+* dandling reference cannot exists, montrer un exemple avec un blocK.
+
 - References can never be null in Rust, so null checking is not necessary.
 
 - A reference is said to "borrow" the value it refers to, and this is a good
