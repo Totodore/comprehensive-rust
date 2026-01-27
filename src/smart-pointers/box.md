@@ -65,6 +65,11 @@ fn main() {
 
 <details>
 
+* unique_ptr in C mais jamais null.
+* Useful box for unsized type, big data, recursive types.
+* Parler de niche optimization.
+
+---
 - `Box` is like `std::unique_ptr` in C++, except that it's guaranteed to be not
   null.
 - A `Box` can be useful when you:

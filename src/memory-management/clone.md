@@ -21,6 +21,13 @@ fn main() {
 
 <details>
 
+
+* Montrer clone sur Box et sur un vec.
+* Commun pour éviter les pb avec le borrow checker.
+* souvent un deep copy.
+* comportement user-defined.
+
+---
 - The idea of `Clone` is to make it easy to spot where heap allocations are
   occurring. Look for `.clone()` and a few others like `vec!` or `Box::new`.
 

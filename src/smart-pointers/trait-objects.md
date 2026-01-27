@@ -80,6 +80,12 @@ Memory layout after allocating `pets`:
 
 <details>
 
+* multiple sizes, we need to abstract this.
+* Parler des vtables/fat pointers.
+* Comparer les output
+
+---
+
 - Types that implement a given trait may be of different sizes. This makes it
   impossible to have things like `Vec<dyn Pet>` in the example above.
 - `dyn Pet` is a way to tell the compiler about a dynamically sized type that

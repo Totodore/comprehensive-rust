@@ -46,6 +46,12 @@ pointers and the value:
 
 <details>
 
+* Ref counting shared pointer
+* Clone vs deep clone (rc sera simplement copié par réf).
+* strong_count, downgrade.
+
+---
+
 - `Rc`'s count ensures that its contained value is valid for as long as there
   are references.
 - `Rc` in Rust is like `std::shared_ptr` in C++.

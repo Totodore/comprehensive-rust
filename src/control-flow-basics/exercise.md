@@ -7,19 +7,8 @@ Goal: Keep adding numbers one by one until a threshold is reached, and return ho
 
 ```rust
 fn sum_until(threshold: i32) -> (i32, u32) {
-    let mut sum = 0;
-    let mut count = 0;
-
-    let count = loop {
-        count += 1;
-        sum += count;
-
-        if sum >= threshold {
-            break count;
-        }
-    };
-
-    (sum, count)
+    todo!("sum numbers starting from 1 until reaching the threshold, \
+            returning the last number added and the total count of numbers added")
 }
 
 fn main() {

@@ -76,6 +76,11 @@ fn main() {
 
 <details>
 
+* C'est l'opposé du C++ (std::move) manuel et copy par défaut.
+* Parler de Copy pour les types simples et clone explicite pour les types complexes.
+
+---
+
 - Mention that this is the opposite of the defaults in C++, which copies by
   value unless you use `std::move` (and the move constructor is defined!).
 

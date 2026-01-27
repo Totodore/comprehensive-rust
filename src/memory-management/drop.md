@@ -36,6 +36,13 @@ fn main() {
 
 <details>
 
+* Drop != mem::drop
+* Valeures sont automatiquement droppées à la fin de leur scope
+* rapeller le contenue de drop.
+* Pk drop ne prend pas self? parler de recursion infinie.
+
+---
+
 - Note that `std::mem::drop` is not the same as `std::ops::Drop::drop`.
 - Values are automatically dropped when they go out of scope.
 - When a value is dropped, if it implements `std::ops::Drop` then its

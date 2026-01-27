@@ -25,6 +25,12 @@ It does this with an explicit ownership concept.
 
 <details>
 
+* C/C++: manuel, quand est ce qu'un pointeur est valide? -> Ca merde.
+* Java/Python/Go: GC, pas tt ces pb mais garbage collection (garbage pauses, overhead).
+
+En rust on a le explicit ownership concept.
+---
+
 This slide is intended to help students coming from other languages to put Rust
 in context.
 

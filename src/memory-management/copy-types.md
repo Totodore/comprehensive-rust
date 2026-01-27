@@ -40,6 +40,11 @@ fn main() {
 
 <details>
 
+* Montrer copy sur des types primitifs (entiers, flottants, bool, char).
+* Mais marche pas sur des types plus complexes (String, Vec, Box).
+
+---
+
 Copying and cloning are not the same thing:
 
 - Copying refers to bitwise copies of memory regions and does not work on
